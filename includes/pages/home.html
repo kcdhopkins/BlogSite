@@ -1,0 +1,16 @@
+<script id="homePage" type="text/x-handlebars-template">
+  <div class="container-fluid bg-grey">
+    <div class="row justify-content-center">
+      {{#each blog}}
+          <div class="card">
+            <span class = "view zoom"><img class="card-img-top img-fluid img" src="img/{{img}}.jpg"></span>
+            <div class="card-body text-center">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{paragraph}}</p>
+              <a class ="btn blue-gradient" href="#blogPost?key={{key}}">Read More</a>
+            </div>
+          </div>
+      {{/each}}
+    </div>
+  </div>
+</script>

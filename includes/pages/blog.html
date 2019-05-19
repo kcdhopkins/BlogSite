@@ -1,0 +1,26 @@
+<script id="blogList" type="text/x-handlebars-template">
+  <div class= "w-100 row d-flex justify-content-center">
+    <section class="my-5 w-75">
+      <h2 class="h1-responsive font-weight-bold text-center my-5">Past blogPost</h2>
+      <p class="text-center dark-grey-text w-responsive mx-auto mb-5">Thank you for taking the time out of your day to stop by my blog. I will be updating this blog twice a week, with everything that grabs my attention that I want to share.</p>
+      {{#each blog}}
+      <div class="row">
+        <div class="col-lg-5 col-xl-4">
+          <div class="view overlay view zoom rounded z-depth-1-half mb-lg-0 mb-4">
+            <img class="img-fluid w-100" src="img/{{img}}.jpg" alt="Sample image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-8">
+          <h3 class="font-weight-bold mb-3"><strong>{{title}}</strong></h3>
+          <p class="dark-grey-text">{{paragraph}}</p>
+          <p>by <a class="font-weight-bold blue">{{author}}</a>, {{date}}</p>
+          <a class="btn btn-primary btn-md" href="#blogPost?key={{key}}">Read more</a>
+        </div>
+      </div>
+      <hr class="my-5">
+      {{/each}}
+  </div>
+</script>

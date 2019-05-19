@@ -1,0 +1,61 @@
+@import "bootstrap.css";
+@import "mdb.css";
+
+*{
+    font-family: cursive, fantasy;
+}
+
+html,body{
+    height: 100%
+}
+/*Begin navbar styles*/
+.navbar{
+  background-color: purple;
+  color: white;
+}
+.navbar-toggler{
+  color:white!important;
+  border-color: white!important;
+}
+
+a{
+  color: white!important;
+}
+a:hover{
+  color:black!important;
+}
+/*End navbar styles*/
+/*Begin jumbotron styles*/
+.jumbotron{
+  background-repeat: no-repeat;
+  background-image: url('/img/jumbo1.jpg');
+  background-size : 100% 100%;
+  color: white;
+}
+/*card styles*/
+.card{
+  margin:10px;
+  width: 500px;
+}
+
+.card img{
+  height:190px;
+}
+
+/*Card styles*/
+.text-center{
+  text-align: center;
+}
+
+.blogImg{
+  position: relative;
+  margin:auto;
+}
+
+/*footer styles*/
+.page-footer{
+  position: sticky;
+  width:100%;
+  left: 0;
+  bottom:0;
+}

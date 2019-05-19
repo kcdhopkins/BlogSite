@@ -1,0 +1,18 @@
+<script id="blogPage" type="text/x-handlebars-template">
+    <div class= "w-100 row d-flex justify-content-center">
+      <section class="my-5 w-75">
+        <div class="text-center my-5">
+          <h2 class="h1-responsive font-weight-bold ">{{title}}</h2>
+          <p>by <a class="font-weight-bold blue">{{author}}</a>, {{date}}</p>
+          <div class="view zoom rounded z-depth-1-half w-50 blogImg">
+            <img class="img-fluid w-100" src="img/{{img}}.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="w-100">
+            <p class="dark-grey-text lead">{{paragraph}}</p>
+          </div>
+        </div>
+        <hr class="my-5">
+    </div>
+</script>
