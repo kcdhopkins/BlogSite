@@ -8,7 +8,6 @@ define(['handlebars', 'blogInfo'], function(Handlebars, blogInfo){
     const blogKey = keys ? keys.substr(4): keys;
     const compiledElement = Handlebars.compile(el);
     const compiledTemplate = keys ? compiledElement(blogArray.find(value => value.key === blogKey )): compiledElement(blogInfo);
-    debugger;
     return compiledTemplate;
   }
 
